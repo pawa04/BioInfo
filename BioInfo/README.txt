@@ -8,6 +8,7 @@ A simple API end point that retrieves the data from an ElasticSearch index
 [Getting Started] (#getting-started)
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
+  - [Structure](#structure)
 
 
 ## Project Description
@@ -61,6 +62,12 @@ Download CSV: Obtain the data in CSV format.
 View Available Routes: Explore the various API endpoints and routes.
 
 This streamlined process will help you quickly set up and navigate through the project.
+
+
+##structure 
+The django project contains two applications: 
+--api : were the serializer and the query logic is stored in the view.
+--query which contains the models and the view that displays the main template. 
 
  
 ### Prerequisites
