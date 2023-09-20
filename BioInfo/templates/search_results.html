@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API MedBioinformatics</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            font-size: 24px;
+            color: #333;
+        }
+        p {
+            font-size: 18px;
+            color: #666;
+        }
+        ul {
+            font-size: 16px;
+            color: #333;
+            list-style-type: none; /* Bullet point style */
+            margin-left: 20px; /* Adjust the left margin for the list */
+        }
+        .button-container {
+            margin-top: 20px;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 5px;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to MedBioinformatics Gene disease Api</h1>
+        <p>Select an option  </p>
+        <div class="button-container">
+            <a href="{%url 'routes'%}"><button class="button" >Get routes  </button></a>
+            <a href="{%url 'gda'%}"><button class="button">Download Json Data </button></a>
+            <a href="{%url 'gda-csv'%}"> <button class="button">Download CSV Data </button></a>
+            
+        </div>
+        <p> IMPORTANT :  How to filter the data !</p>
+        <ul>
+            <li><b>Go to "api/gda/?search=score" and replace "score" with a floating number.</b></li><br><br>
+            <li>E.g.: host/api/gda/?search=0.1</li>
+        </ul>
+    </div>
+</body>
+</html>
